@@ -32,7 +32,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <input type="text" value={display} readOnly className="display" />
+      <input type="text" value={display} readOnly className="display" data-testid='display_test_id' />
       {error && <div className="error">Error</div>}
       <div className="buttons">
       <button className="number" onClick={() => handleClick('7')}>7</button>
